@@ -36,17 +36,28 @@ body {
 }
 
     /* MAIN */
-/* sidebar */
 main {
     flex-grow: 1;
     display: flex;
 }
 
+/* sidebar */
 #sidebar { 
     background-color: black;
     width: 15vw;
+    padding: 10px;
 }
 
+#logo-sm { display: none; }
+#logo-lg { 
+    width: 75%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#sidebar .home-item i { font-size: 20px; }
+
+/*main content */
 #main-content {
     flex-grow: 1;
     background-color: #141922;
@@ -61,3 +72,8 @@ main {
 }
 .debug #sidebar { border: 1px solid #FFA800; }
 .debug #main-content { border: 1px solid #FF08E6; }
+
+.debug #black-bar { border: 1px solid #25bb00; }
+.debug #recently { border: 1px solid #8f00bb; }
+.debug #created-for { border: 1px solid #00bbab; }
+.debug #popular { border: 1px solid #bb6a00; }

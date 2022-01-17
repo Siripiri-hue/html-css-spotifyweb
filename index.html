@@ -20,27 +20,45 @@
 
     <main>
         <section id="sidebar">  
-            <img src="img/logo.svg">
-            <ul id="home">
-                <li>Home</li>
-                <li>Cerca</li>
-                <li>La tua libreria</li>
+            <!-- loghi  -->
+            <img id="logo-lg" src="img/logo.svg">
+            <img id="logo-sm" src="img/logo-small.svg">
+            <!-- lista widget home -->
+            <ul id="home-list">
+                <li class="home-item">
+                    <i class="fas fa-home"></i>
+                    <span class="home-item__text">Home</span>
+                </li>
+                <li class="home-item">
+                    <i class="fas fa-search"></i>
+                    <span class="home-item__text">Cerca</span>
+                </li>
+                <li class="home-item">
+                    <i class="fas fa-book-open"></i>
+                    <span class="home-item__text">La tua libreria</span>
+                </li>
             </ul>
+            <!-- playlists -->
             <h3>Playlist</h3>
             <ul id="Playlist">
-                <li>Crea Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
+                <li id="new-playlist">
+                    <i class="fas fa-plus-square"></i>
+                    Crea Playlist
+                </li>
+                <li class="playlist-name">Nome Playlist</li>
+                <li class="playlist-name">Nome Playlist</li>
+                <li class="playlist-name">Nome Playlist</li>
+                <li class="playlist-name">Nome Playlist</li>
+                <li class="playlist-name">Nome Playlist</li>
+                <li class="playlist-name">Nome Playlist</li>
             </ul>
         </section>
 
-        <section id="main-content"> main content 
-
+        <section id="main-content"> 
+            <div id="black-bar"> barra nera </div>
+            <div id="recently"> recently played </div>
+            <div id="created-for">creato per John Doe</div>
+            <div id="popular">artisti popolari</div>
         </section>
     </main>
 </body>
