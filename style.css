@@ -29,6 +29,10 @@ body {
 /* toolbar */
 #toolbar {
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
 }
 
     /* MAIN */
@@ -52,5 +56,8 @@ main {
 
 /* debug */
 .debug #toolbar { border: 1px solid #27D0B2; }
+.debug #toolbar > .song, .debug #toolbar > .player, .debug #toolbar > .sound-commands {
+    border: 1px solid #FFA800; 
+}
 .debug #sidebar { border: 1px solid #FFA800; }
 .debug #main-content { border: 1px solid #FF08E6; }
