@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    color: white;
 }
 
 img { width: 100%; }
@@ -16,3 +17,40 @@ a {
 }
 
 /* --- */
+
+/* COMMON */
+body { 
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+
+    /* HEADER */
+/* toolbar */
+#toolbar {
+    background-color: #282828;
+}
+
+    /* MAIN */
+/* sidebar */
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+#sidebar { 
+    background-color: black;
+    width: 15vw;
+}
+
+#main-content {
+    flex-grow: 1;
+    background-color: #141922;
+}
+
+
+
+/* debug */
+.debug #toolbar { border: 1px solid #27D0B2; }
+.debug #sidebar { border: 1px solid #FFA800; }
+.debug #main-content { border: 1px solid #FF08E6; }
