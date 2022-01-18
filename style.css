@@ -6,7 +6,6 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    color: #646464;
 }
 
 img { max-width: 100%; }
@@ -24,11 +23,11 @@ body {
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
+    color: #646464;
 }
 
-.white {
-    color: white;
-}
+.white { color: white; }
+.bold { font-weight: 700; }
 
 /* HEADER - TOOLBAR */
 #toolbar {
@@ -55,16 +54,16 @@ body {
 #song__details {
     display: flex;
     flex-direction: column;
-    font-weight: 700;
 }
 
     /* player centrale */
-#player__commands {
-    /* text-align: center; */
-    /* line-height: 30px; */
-    /* vertical-align: middle; */ 
+#player {
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+#player__commands {
+    display: flex;
     align-items: center;
     column-gap: 20px;
 }
@@ -77,6 +76,41 @@ body {
     column-gap: 20px;
     align-items: center;
 }
+
+#player__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.bar { 
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 10px;
+}
+
+#player__bar { width: 22vw; }
+#player__bar::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#volume-bar { width: 7vw; }
+#volume-bar::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -101,8 +135,6 @@ main {
 /* sidebar */
 #sidebar { 
     background-color: black;
-    color: #5A5A5A;
-    font-weight: 700;
     flex-basis: 200px;
     padding: 10px;
     flex-shrink: 0;
@@ -120,14 +152,11 @@ main {
 .home-item img { 
     height: 25px;
     vertical-align: middle;
+    opacity: 0.7;
 }
 
 #home-list { padding: 30px 0; }
-
-.home-item__text {
-    font-weight: 700;
-    line-height: 25px;
-}
+.home-item__text { line-height: 25px; }
 
     /* blocco playlist */
 #playlist__title {
@@ -152,7 +181,6 @@ main {
 #install {
     border-bottom: 1px solid #5A5A5A;
     width: 90%;
-    font-weight: 700;
     /* display: flex;
     align-items: center;
     column-gap: 10px; */
@@ -179,7 +207,6 @@ main {
     align-items: center;
     column-gap: 10px;
     margin-bottom: auto; */
-    font-weight: 700;
     line-height: 40px;
     position: absolute;
     bottom: 0;
