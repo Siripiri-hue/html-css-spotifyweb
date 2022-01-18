@@ -11,6 +11,7 @@
 
 img { max-width: 100%; }
 ul { list-style-type: none; }
+li { cursor: pointer; }
 a { 
     text-decoration: none;
     color: currentColor;
@@ -25,8 +26,7 @@ body {
     height: 100vh;
 }
 
-    /* HEADER */
-/* toolbar */
+/* HEADER - TOOLBAR */
 #toolbar {
     background-color: #282828;
     display: flex;
@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-    /* MAIN */
+/* MAIN */
 main {
     flex-grow: 1;
     display: flex;
@@ -45,11 +45,12 @@ main {
 /* sidebar */
 #sidebar { 
     background-color: black;
+    color: #5A5A5A;
     font-weight: 700;
-    color: #5F5F5F;
     flex-basis: 200px;
     padding: 10px;
     flex-shrink: 0;
+    position: relative;
 }
 
     /* loghi */
@@ -62,13 +63,16 @@ main {
     /* lista widget home */
 .home-item img { 
     height: 25px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
+
 #home-list { padding: 30px 0; }
+
 .home-item__text {
     font-weight: 700;
     line-height: 25px;
 }
+
     /* blocco playlist */
 #playlist__title {
     text-transform: uppercase;
@@ -76,37 +80,53 @@ main {
     line-height: 30px;
 }
 
-#playlist__new i {
+#playlist__new i { 
     font-size: 40px;
     vertical-align: middle;
 }
-#playlist__new {
+
+#playlist__new { 
     line-height: 40px;
+    cursor: pointer;
 }
 
-.playlist__name {
-    line-height: 25px;
-}
+.playlist__name { line-height: 25px; }
 
-
-
-    /* tasti in basso */
-#install img { width: 15px; }
+    /* tasto installa */
 #install {
     border-bottom: 1px solid #5A5A5A;
-    color: #5A5A5A;
+    width: 90%;
     font-weight: 700;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 10px; */
+    line-height: 40px;
+    position: absolute;
+    bottom: 50px;
 }
 
+#install img { 
+    width: 15px;
+    vertical-align: middle; 
+}
+
+/* #install::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #5A5A5A;
+    width: 90%;
+} */
+
+    /* user profile */
 #user {
-    display: flex;
+    /* display: flex;
     align-items: center;
     column-gap: 10px;
-    margin-bottom: auto;
+    margin-bottom: auto; */
     font-weight: 700;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
 }
 
 #user > div { 
@@ -115,7 +135,10 @@ main {
     height: 25px;
     width: 25px;
     overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
 }
+
 
 /*main content */
 #main-content {
@@ -143,7 +166,7 @@ main {
     border: 1px solid #FFA800; 
 }
 
-.debug #sidebar { border: 1px solid #FFA800; }
+/* .debug #sidebar { border: 1px solid #FFA800; } */
 .debug #main-content { border: 1px solid #FF08E6; }
 
 .debug #upgrade-banner { border: 1px solid #25bb00; }
