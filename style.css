@@ -9,7 +9,7 @@
     color: white;
 }
 
-img { width: 100%; }
+img { max-width: 100%; }
 ul { list-style-type: none; }
 a { 
     text-decoration: none;
@@ -31,7 +31,7 @@ body {
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 80px;
     align-items: center;
 }
 
@@ -39,13 +39,15 @@ body {
 main {
     flex-grow: 1;
     display: flex;
+    overflow-y: scroll;
 }
 
 /* sidebar */
 #sidebar { 
     background-color: black;
-    width: 15vw;
+    flex-basis: 200px;
     padding: 10px;
+    flex-shrink: 0;
 }
 
 #logo-sm { display: none; }
@@ -61,6 +63,18 @@ main {
 #main-content {
     flex-grow: 1;
     background-color: #141922;
+    position: relative;
+    padding-top: 120px;
+    padding-left: 20px;
+}
+
+#upgrade-banner {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
 }
 
 
@@ -70,10 +84,12 @@ main {
 .debug #toolbar > .song, .debug #toolbar > .player, .debug #toolbar > .sound-commands {
     border: 1px solid #FFA800; 
 }
+
 .debug #sidebar { border: 1px solid #FFA800; }
 .debug #main-content { border: 1px solid #FF08E6; }
 
-.debug #black-bar { border: 1px solid #25bb00; }
+.debug #upgrade-banner { border: 1px solid #25bb00; }
+.debug #nav-explorer { border: 1px solid salmon;}
 .debug #recently { border: 1px solid #8f00bb; }
 .debug #created-for { border: 1px solid #00bbab; }
 .debug #popular { border: 1px solid #bb6a00; }
