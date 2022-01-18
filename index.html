@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +13,22 @@
 
 <body class="debug">
 
-    <header id="toolbar">  
-
-        <div id="song"> 
+    <!-- toolbar  -->
+    <header id="toolbar">
+        <!-- canzone a sx -->
+        <div id="song">
             <img src="img/PinkFloydAnotherBrickCover.jpg">
             <div id="song__details" class="bold">
                 <span id="song__author">Pink Floyd</span>
                 <span id="song__title" class="white">Another Brick In The Wall</span>
             </div>
             <!-- <div id="song__icons"> -->
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-            <!-- </div>             -->
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+            <!-- </div> -->
         </div>
 
+        <!-- player centrale -->
         <div id="player" class="white">
             <div id="player__commands">
                 <i class="fas fa-random"></i>
@@ -33,15 +36,15 @@
                 <i class="far fa-play-circle" id="play-icon"></i>
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
-            </div> 
+            </div>
             <div id="player__time" class="bold">
                 <div id="past-time">0:25</div>
                 <div id="player__bar" class="bar"></div>
                 <div id="total-time">4:26</div>
             </div>
-            
         </div>
-        
+
+        <!-- comandi suono a dx -->
         <div id="sound-commands" class="white">
             <i class="fas fa-list"></i>
             <i class="fas fa-desktop"></i>
@@ -51,7 +54,7 @@
     </header>
 
     <main>
-        <section id="sidebar" class="bold">  
+        <section id="sidebar" class="bold">
             <!-- loghi  -->
             <img id="logo-lg" src="img/logo.svg">
             <img id="logo-sm" src="img/logo-small.svg">
@@ -72,14 +75,13 @@
                 </li>
             </ul>
 
-            <!-- playlists -->
+            <!-- blocco playlists -->
             <div id="playlist">
                 <h3 id="playlist__title" class="white">Playlist</h3>
                 <div id="playlist__new">
                     <i class="fas fa-plus-square"></i>
                     Crea Playlist
                 </div>
-                
                 <ul>
                     <li class="playlist__name">Nome Playlist</li>
                     <li class="playlist__name">Nome Playlist</li>
@@ -103,7 +105,7 @@
             </div>
         </section>
 
-        <section id="main-content"> 
+        <section id="main-content">
             <div id="upgrade-banner"> barra nera </div>
             <div id="nav-explorer"> esplora, podcast ecc </div>
             <div id="recently"> recently played </div>
