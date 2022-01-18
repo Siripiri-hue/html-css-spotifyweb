@@ -1,0 +1,16 @@
+/* toolbar hovers */
+#toolbar i:hover { color: white; }
+
+
+
+
+/* sidebar hovers */
+
+.home-item:hover, #playlist__new:hover, .playlist__name:hover, #install:hover { 
+    color: white; 
+    cursor: pointer;
+}
+
+.home-item:hover img, #install:hover img {
+    opacity: 1;
+}
