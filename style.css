@@ -43,6 +43,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    column-gap: 15px;
     flex-basis: 200px;
 }
 
@@ -57,6 +58,25 @@ body {
     font-weight: 700;
 }
 
+    /* player centrale */
+#player__commands {
+    /* text-align: center; */
+    /* line-height: 30px; */
+    /* vertical-align: middle; */ 
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    column-gap: 20px;
+}
+
+#play-icon { font-size: 30px; }
+
+    /* comandi suono */
+#sound-commands {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
 
 
 
@@ -197,7 +217,7 @@ main {
 
 
 /* debug */
-.debug #toolbar { border: 1px solid #27D0B2; }
+/* .debug #toolbar { border: 1px solid #27D0B2; } */
 .debug #toolbar > .song, .debug #toolbar > .player, .debug #toolbar > .sound-commands {
     border: 1px solid #FFA800; 
 }
