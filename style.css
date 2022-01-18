@@ -160,6 +160,7 @@ main {
 #playlist__new { 
     line-height: 40px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .playlist__name { line-height: 25px; }
