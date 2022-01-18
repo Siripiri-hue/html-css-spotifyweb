@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <title>Spotify</title>
 </head>
@@ -23,35 +23,52 @@
             <!-- loghi  -->
             <img id="logo-lg" src="img/logo.svg">
             <img id="logo-sm" src="img/logo-small.svg">
+
             <!-- lista widget home -->
             <ul id="home-list">
                 <li class="home-item">
-                    <i class="fas fa-home"></i>
+                    <img src="img/home.svg">
                     <span class="home-item__text">Home</span>
                 </li>
                 <li class="home-item">
-                    <i class="fas fa-search"></i>
+                    <img src="img/search.svg">
                     <span class="home-item__text">Cerca</span>
                 </li>
                 <li class="home-item">
-                    <i class="fas fa-book-open"></i>
+                    <img src="img/libreria.svg">
                     <span class="home-item__text">La tua libreria</span>
                 </li>
             </ul>
+
             <!-- playlists -->
-            <h3>Playlist</h3>
-            <ul id="Playlist">
-                <li id="new-playlist">
+            <div id="playlist">
+                <h3 id="playlist__title">Playlist</h3>
+                <div id="playlist__new">
                     <i class="fas fa-plus-square"></i>
                     Crea Playlist
-                </li>
-                <li class="playlist-name">Nome Playlist</li>
-                <li class="playlist-name">Nome Playlist</li>
-                <li class="playlist-name">Nome Playlist</li>
-                <li class="playlist-name">Nome Playlist</li>
-                <li class="playlist-name">Nome Playlist</li>
-                <li class="playlist-name">Nome Playlist</li>
-            </ul>
+                </div>
+                
+                <ul>
+                    <li class="playlist__name">Nome Playlist</li>
+                    <li class="playlist__name">Nome Playlist</li>
+                    <li class="playlist__name">Nome Playlist</li>
+                    <li class="playlist__name">Nome Playlist</li>
+                    <li class="playlist__name">Nome Playlist</li>
+                    <li class="playlist__name">Nome Playlist</li>
+                </ul>
+            </div>
+
+            <!-- roba in fondo -->
+            <div id="install">
+                <img src="img/download.svg">
+                Installa app
+            </div>
+            <div id="user">
+                <div>
+                    <img src="img/profile.svg">
+                </div>
+                John Doe
+            </div>
         </section>
 
         <section id="main-content"> 

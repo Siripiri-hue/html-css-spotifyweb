@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     color: white;
 }
 
@@ -45,19 +45,77 @@ main {
 /* sidebar */
 #sidebar { 
     background-color: black;
+    font-weight: 700;
+    color: #5F5F5F;
     flex-basis: 200px;
     padding: 10px;
     flex-shrink: 0;
 }
 
+    /* loghi */
 #logo-sm { display: none; }
 #logo-lg { 
     width: 75%;
     height: auto;
-    padding-bottom: 10px;
 }
 
-#sidebar .home-item i { font-size: 20px; }
+    /* lista widget home */
+.home-item img { 
+    height: 25px;
+    vertical-align: middle; 
+}
+#home-list { padding: 30px 0; }
+.home-item__text {
+    font-weight: 700;
+    line-height: 25px;
+}
+    /* blocco playlist */
+#playlist__title {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+#playlist__new i {
+    font-size: 40px;
+    vertical-align: middle;
+}
+#playlist__new {
+    line-height: 40px;
+}
+
+.playlist__name {
+    line-height: 25px;
+}
+
+
+
+    /* tasti in basso */
+#install img { width: 15px; }
+#install {
+    border-bottom: 1px solid #5A5A5A;
+    color: #5A5A5A;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: auto;
+    font-weight: 700;
+}
+
+#user > div { 
+    border-radius: 50%;
+    background-color: #808080;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+}
 
 /*main content */
 #main-content {
