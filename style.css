@@ -27,6 +27,12 @@ body {
 
 .white { color: white; }
 .bold { font-weight: 700; }
+.bar { 
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 10px;
+}
+
 
 /* HEADER - TOOLBAR */
 #toolbar {
@@ -61,21 +67,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 10px;
 }
+
 #player__commands {
     display: flex;
     align-items: center;
     column-gap: 20px;
+    
 }
 
-#play-icon { font-size: 30px; }
-
-    /* comandi suono */
-#sound-commands {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    padding: 0 10px;
+#play-icon { 
+    font-size: 30px;
+    transition: font-size;
 }
 
 #player__time {
@@ -85,13 +89,7 @@ body {
     column-gap: 5px;
 }
 
-.bar { 
-    height: 4px;
-    background-color: #5A5A5A;
-    border-radius: 10px;
-}
-
-#player__bar { width: 22vw; }
+#player__bar { width: 23vw; }
 #player__bar::after {
     content: "";
     display: block;
@@ -99,6 +97,14 @@ body {
     height: 4px;
     background-color: white;
     border-radius: 10px;
+}
+
+    /* comandi suono */
+#sound-commands {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding: 0 10px;
 }
 
 #volume-bar { width: 7vw; }
@@ -110,6 +116,7 @@ body {
     background-color: white;
     border-radius: 10px;
 }
+
 
 /* MAIN */
 main {

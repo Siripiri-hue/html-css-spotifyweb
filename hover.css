@@ -1,16 +1,38 @@
 /* toolbar hovers */
-#toolbar i:hover { color: white; }
+#toolbar i:hover { 
+    color: white; 
+    cursor: pointer;
+}
 
+#song__title:hover { 
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+#play-icon:hover { font-size: 31px; }
+#player__bar:hover::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #ADFF2F;
+    border-radius: 10px;
+}
+
+#volume-bar:hover::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #ADFF2F;
+    border-radius: 10px;
+}
 
 
 /* sidebar hovers */
-
 .home-item:hover, #playlist__new:hover, .playlist__name:hover, #install:hover { 
     color: white; 
     cursor: pointer;
 }
 
-.home-item:hover img, #install:hover img {
-    opacity: 1;
-}
+.home-item:hover img, #install:hover img { opacity: 1; }
