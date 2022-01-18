@@ -6,7 +6,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    color: white;
+    color: #646464;
 }
 
 img { max-width: 100%; }
@@ -26,6 +26,10 @@ body {
     height: 100vh;
 }
 
+.white {
+    color: white;
+}
+
 /* HEADER - TOOLBAR */
 #toolbar {
     background-color: #282828;
@@ -34,6 +38,38 @@ body {
     height: 80px;
     align-items: center;
 }
+    /* canzone */
+#song { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 200px;
+}
+
+#song img {
+    height: 50px;
+    width: auto;
+}
+
+#song__details {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MAIN */
 main {
