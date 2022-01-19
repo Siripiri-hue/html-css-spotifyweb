@@ -18,7 +18,9 @@
     <header id="toolbar">
         <!-- canzone a sx -->
         <div id="song">
-            <img src="img/PinkFloydAnotherBrickCover.jpg">
+            <!-- <figure> -->
+                <img src="img/PinkFloydAnotherBrickCover.jpg">
+            <!-- </figure> -->
             <div id="song__details" class="bold">
                 <span id="song__author">Pink Floyd</span>
                 <span id="song__title" class="white">Another Brick In The Wall</span>
@@ -34,14 +36,17 @@
             <div id="player__commands">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
-                <i class="far fa-play-circle" id="play-icon"></i>
+                <div id="play-icon">
+                    <i class="far fa-play-circle"></i>
+                </div>
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
+
             <div id="player__time" class="bold">
-                <div id="past-time">0:25</div>
+                <span id="past-time">0:25</span>
                 <div id="player__bar" class="bar"></div>
-                <div id="total-time">4:26</div>
+                <span id="total-time">4:26</span>
             </div>
         </div>
 
@@ -107,7 +112,11 @@
         </section>
 
         <section id="main-content">
-            <div id="upgrade-banner"> barra nera </div>
+            <div id="upgrade-banner">
+                <button id="upgrade__btn">
+                    <a href="">Effettua l'upgrade</a>
+                </button>
+            </div>
             <div id="nav-explorer"> esplora, podcast ecc </div>
             <div id="recently"> recently played </div>
             <div id="created-for">creato per John Doe</div>

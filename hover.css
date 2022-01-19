@@ -9,14 +9,25 @@
     cursor: pointer;
 }
 
-#play-icon:hover { font-size: 31px; }
+#play-icon:hover { font-size: 33px; }
 #player__bar:hover::after {
     content: "";
     display: block;
     width: 20%;
     height: 4px;
     background-color: #ADFF2F;
-    border-radius: 10px;
+    border-radius: 10px; 
+}
+#player__bar:hover::after {
+    content: ""; 
+    display: inline-block; 
+    position: absolute;
+    left: 15%;
+    top: -50%;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; 
 }
 
 #volume-bar:hover::after {

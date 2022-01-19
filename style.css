@@ -54,7 +54,7 @@ body {
 
 #song img {
     height: 50px;
-    width: auto;
+    width: 50px;
 }
 
 #song__details {
@@ -67,19 +67,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
 }
 
 #player__commands {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 20px;
-    
+    column-gap: 15px;
 }
 
 #play-icon { 
-    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
     transition: font-size;
+}
+
+#play-icon i {
+    font-size: 30px;
 }
 
 #player__time {
@@ -89,7 +95,11 @@ body {
     column-gap: 5px;
 }
 
-#player__bar { width: 23vw; }
+#player__bar { 
+    width: 23vw;
+    position: relative;
+}
+
 #player__bar::after {
     content: "";
     display: block;
@@ -209,7 +219,6 @@ main {
     background-color: #141922;
     position: relative;
     padding-top: 120px;
-    padding-left: 20px;
 }
 
 #upgrade-banner {
@@ -219,6 +228,20 @@ main {
     right: 0;
     left: 0;
     height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+}
+
+#upgrade__btn {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 700;
 }
 
 
