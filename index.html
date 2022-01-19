@@ -23,7 +23,7 @@
             <!-- </figure> -->
             <div id="song__details" class="bold">
                 <span id="song__author">Pink Floyd</span>
-                <span id="song__title" class="white">Another Brick In The Wall</span>
+                <span id="song__title" class="white">Another Brick in the Wall</span>
             </div>
             <!-- <div id="song__icons"> -->
             <i class="far fa-heart"></i>
@@ -60,7 +60,7 @@
     </header>
 
     <main>
-        <section id="sidebar" class="bold">
+        <aside id="sidebar" class="bold">
             <!-- loghi  -->
             <img id="logo-lg" src="img/logo.svg">
             <img id="logo-sm" src="img/logo-small.svg">
@@ -109,32 +109,36 @@
                 </div>
                 John Doe
             </div>
-        </section>
+        </aside>
 
         <section id="main-content">
-
             <!-- banner upgrade -->
-            <div id="upgrade-banner">
+            <section id="upgrade-banner">
                 <button id="upgrade__btn">
                     <a href="#">Effettua l'upgrade</a>
                 </button>
-            </div>
+            </section>
 
             <!-- barra navigazione schede  -->
-            <ul id="nav-explorer">
-                <li><a href="#">In evidenza</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Classifiche</a></li>
-                <li><a href="#">Generi e mood</a></li>
-                <li><a href="#">Nuove uscite</a></li>
-                <li><a href="#">Scopri</a></li>
-            </ul>
+            <nav>
+                <ul id="nav-explorer">
+                    <li><a href="#">In evidenza</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e mood</a></li>
+                    <li><a href="#">Nuove uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
+                </ul>
+            </nav>
 
             <!-- blocco album recenti  -->
-            <div id="recently" class="music-container">
-                <h4 class="music-container__title white bold">Recently Played</h4>
+            <section id="recently" class="music-container">
+                <div class="section-title">
+                    <h4 class="music-container__title white bold">Recently Played</h4>
+                <h3 class="music-container__subtitle bold"></h3>
+                </div>
                 
-                <div class="music-container__wrapper">
+                <div class="albums__wrapper">
                     <div class="album">
                         <figure class="album__thumbnail">
                             <img src="img/metal_lifting.jpg">
@@ -196,144 +200,69 @@
                     </div>
                     
                 </div>
-            </div>
+            </section>
 
             <!-- blocco album creati per  -->
-            <!-- <div id="created-for" class="music-container">
-
-                <h4 class="music-container__title white bold">Recently Played</h4>
-                <div class="music-container__wrapper">
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
+            <section id="created-for" class="music-container">
+                <div class="section-title">
+                    <h4 class="music-container__title white bold">Creato per John Doe</h4>
+                    <h3 class="music-container__subtitle bold">Più ascolti, più saranno accurati i suggerimenti.</h3>
                 </div>
-            </div> -->
+
+                <div class="albums__wrapper">
+                    <div class="album">
+                        <figure class="album__thumbnail">
+                            <img src="img/radar.jpeg">
+                        </figure>
+                        <div class="album__details">
+                            <div class="album__title white bold">Release Radar</div>
+                            <div class="album__author bold">Various Artists</div>
+                        </div>
+                    </div>
+
+                    <div class="album">
+                        <figure class="album__thumbnail">
+                            <img src="img/mixdaily.jpeg">
+                        </figure>
+                        <div class="album__details">
+                            <div class="album__title white bold">Daily Mix 1</div>
+                            <div class="album__author bold">Various Artists</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
             <!-- blocco artisti popolari  -->
-            <!-- <div id="popular-artists" class="music-container">
-
-                <h4 class="music-container__title white bold">Recently Played</h4>
-                <div class="music-container__wrapper">
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
-
-                    <div class="album">
-                        <figure class="album__thumbnail">
-                            <img src="img/metal_lifting.jpg">
-                        </figure>
-                        <div class="album__details">
-                            <div class="album__title">Heavy Metal</div>
-                            <div class="album__author">Various Artists</div>
-                        </div>
-                    </div>
+            <section id="#popular-artists" class="music-container">
+                <div class="section-title">
+                    <h4 class="music-container__title white bold">Artisti più popolari</h4>
+                <h3 class="music-container__subtitle bold">Più ascolti, più saranno accurati i suggerimenti.</h3>
                 </div>
-            </div> -->
 
+                <div class="albums__wrapper">
+                    <div class="album">
+                        <figure class="album__thumbnail circled">
+                            <img src="img/einaudi.jpeg">
+                        </figure>
+                        <div class="album__details">
+                            <div class="album__title white bold">Ludovico Einaudi</div>
+                            <div class="album__author bold"></div>
+                        </div>
+                    </div>
+
+                    <div class="album">
+                        <figure class="album__thumbnail circled">
+                            <img src="img/youg.jpeg">
+                        </figure>
+                        <div class="album__details">
+                            <div class="album__title white bold">Lana Del Ray</div>
+                            <div class="album__author bold"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </section>
     </main>
 </body>

@@ -264,38 +264,42 @@ main {
 }
 
     /* sezioni musicali */
+
+.music-container { padding: 15px; }
+.section-title { padding-bottom: 12px; }
 .music-container__title {
     font-size: 20px;
-    border: 1px solid salmon;
-    padding: 15px;
+    line-height: 30px;
 }
+.music-container__subtitle { line-height: 30px; }
 
-.music-container__wrapper { 
-    border: 1px solid violet;
-    padding: 15px;
+.albums__wrapper { 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .album { max-width: 175px; }
-
 .album__thumbnail {
-    border: 1px solid yellowgreen;
     width: 175px;
     height: 175px;
-    /* padding: 100px; */
 }
 
 .album__details {
     padding: 10px;
     text-align: center;
 }
-
-.album__details .album__author { 
+.album__author { 
     font-size: 10px;
     line-height: 20px;
- }
+}
+
+#recently .music-container__subtitle { display: none; }
+#created-for .album__author { display: none; }
+
+.circled {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 
@@ -312,9 +316,9 @@ main {
 
 /* debug */
 /* .debug #toolbar { border: 1px solid #27D0B2; } */
-.debug #toolbar > .song, .debug #toolbar > .player, .debug #toolbar > .sound-commands {
+/* .debug #toolbar > .song, .debug #toolbar > .player, .debug #toolbar > .sound-commands {
     border: 1px solid #FFA800; 
-}
+} */
 
 /* .debug #sidebar { border: 1px solid #FFA800; } */
 /* .debug #main-content { border: 1px solid #FF08E6; } */
@@ -322,5 +326,5 @@ main {
 /* .debug #upgrade-banner { border: 1px solid #25bb00; } */
 /* .debug #nav-explorer { border: 1px solid salmon;} */
 /* .debug #recently { border: 1px solid #8f00bb; } */
-.debug #created-for { border: 1px solid #00bbab; }
-.debug #popular-artists { border: 1px solid #bb6a00; }
+/* .debug #created-for { border: 1px solid #00bbab; } */
+/* .debug #popular-artists { border: 1px solid orange; } */
