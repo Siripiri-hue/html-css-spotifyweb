@@ -218,9 +218,10 @@ main {
     flex-grow: 1;
     background-color: #141922;
     position: relative;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
+    /*upgrade banner */ 
 #upgrade-banner {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -244,6 +245,34 @@ main {
     font-weight: 700;
 }
 
+    /* nav esplora */
+#nav-explorer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#nav-explorer li {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* debug */
@@ -255,8 +284,8 @@ main {
 /* .debug #sidebar { border: 1px solid #FFA800; } */
 .debug #main-content { border: 1px solid #FF08E6; }
 
-.debug #upgrade-banner { border: 1px solid #25bb00; }
-.debug #nav-explorer { border: 1px solid salmon;}
+/* .debug #upgrade-banner { border: 1px solid #25bb00; } */
+/* .debug #nav-explorer { border: 1px solid salmon;} */
 .debug #recently { border: 1px solid #8f00bb; }
 .debug #created-for { border: 1px solid #00bbab; }
 .debug #popular { border: 1px solid #bb6a00; }
