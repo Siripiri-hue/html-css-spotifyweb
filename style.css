@@ -41,7 +41,9 @@ body {
     justify-content: space-between;
     height: 80px;
     align-items: center;
+    padding: 10px;
 }
+
     /* canzone */
 #song { 
     display: flex;
@@ -132,7 +134,7 @@ body {
 main {
     flex-grow: 1;
     display: flex;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 /* sidebar */
@@ -219,6 +221,7 @@ main {
     background-color: #141922;
     position: relative;
     padding-top: 100px;
+    overflow: auto;
 }
 
     /*upgrade banner */ 
@@ -260,7 +263,39 @@ main {
     line-height: 50px;
 }
 
+    /* sezioni musicali */
+.music-container__title {
+    font-size: 20px;
+    border: 1px solid salmon;
+    padding: 15px;
+}
 
+.music-container__wrapper { 
+    border: 1px solid violet;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album { max-width: 175px; }
+
+.album__thumbnail {
+    border: 1px solid yellowgreen;
+    width: 175px;
+    height: 175px;
+    /* padding: 100px; */
+}
+
+.album__details {
+    padding: 10px;
+    text-align: center;
+}
+
+.album__details .album__author { 
+    font-size: 10px;
+    line-height: 20px;
+ }
 
 
 
@@ -282,10 +317,10 @@ main {
 }
 
 /* .debug #sidebar { border: 1px solid #FFA800; } */
-.debug #main-content { border: 1px solid #FF08E6; }
+/* .debug #main-content { border: 1px solid #FF08E6; } */
 
 /* .debug #upgrade-banner { border: 1px solid #25bb00; } */
 /* .debug #nav-explorer { border: 1px solid salmon;} */
-.debug #recently { border: 1px solid #8f00bb; }
+/* .debug #recently { border: 1px solid #8f00bb; } */
 .debug #created-for { border: 1px solid #00bbab; }
-.debug #popular { border: 1px solid #bb6a00; }
+.debug #popular-artists { border: 1px solid #bb6a00; }
