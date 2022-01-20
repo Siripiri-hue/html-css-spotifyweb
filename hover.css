@@ -13,17 +13,20 @@
     transform: scale(1.2); 
 }
 
-/* sliders */
 
+/* sliders */
 #player__time:hover #timeline__current-time {
     background-color: #ADFF2F;
     cursor: pointer;
 }
-.spot:hover { 
+#player__time:hover .spot {
+    display: block;
+}
+#player__time:hover #timeline__slider {
     cursor: pointer;
 }
 
-#volume-bar:hover::after {
+/* #volume-bar:hover::after {
     content: "";
     display: block;
     width: 20%;
@@ -31,21 +34,11 @@
     background-color: #ADFF2F;
     border-radius: 10px;
     cursor: pointer;
-} 
+}  */
 
 
 
-/* #player__bar:hover::after {
-    content: ""; 
-    display: inline-block; 
-    position: absolute;
-    left: 15%;
-    top: -50%;
-    width: 10px; 
-    height: 10px;
-    border-radius: 50%;
-    background-color: white; 
-} */
+
 
 
 
@@ -55,7 +48,6 @@
     color: white; 
     cursor: pointer;
 }
-
 .home-item:hover img, #install:hover img { opacity: 1; }
 
 
@@ -63,13 +55,12 @@
 #upgrade__btn:hover { transform: scale(1.1); }
 #nav-explorer li:hover { color: white; }
 
-/* overlay alle cover album */
 
+/* overlay alle cover album */
 .album__thumbnail:hover i  {
     display: block;
     z-index: 99;
 }
-
 .album__thumbnail:hover::after {  
     content: "";
     display: block;
