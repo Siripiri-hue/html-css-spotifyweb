@@ -15,14 +15,14 @@
 
 
 /* sliders */
-#player__time:hover #timeline__current-time {
+#player__time:hover #timeline__current-time, #volume-bar:hover #volume__current-volume {
     background-color: #ADFF2F;
     cursor: pointer;
 }
-#player__time:hover .spot {
+#player__time:hover .spot, #volume-bar:hover .spot {
     display: block;
 }
-#player__time:hover #timeline__slider {
+#player__time:hover #timeline__slider, #volume-bar:hover {
     cursor: pointer;
 }
 

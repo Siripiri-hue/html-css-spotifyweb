@@ -128,15 +128,24 @@ body {
     padding: 0 10px;
 }
 
-#volume-bar { width: 7vw; }
-#volume-bar::after {
+#volume-bar { 
+    width: 7vw;
+    position: relative;
+}
+
+#volume__current-volume {
+    background-color: white;
+    width: 20%;
+    overflow: hidden; 
+}
+/* #volume-bar::after {
     content: "";
     display: block;
     width: 20%;
     height: 4px;
     background-color: white;
     border-radius: 10px;
-}
+} */
 
 
 /* MAIN */
