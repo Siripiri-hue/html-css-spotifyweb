@@ -9,25 +9,18 @@
     cursor: pointer;
 }
 
-#play-icon:hover { font-size: 33px; }
-#player__bar:hover::after {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 4px;
-    background-color: #ADFF2F;
-    border-radius: 10px; 
+#play-icon:hover { 
+    transform: scale(1.2); 
 }
-#player__bar:hover::after {
-    content: ""; 
-    display: inline-block; 
-    position: absolute;
-    left: 15%;
-    top: -50%;
-    width: 10px; 
-    height: 10px;
-    border-radius: 50%;
-    background-color: white; 
+
+/* sliders */
+
+#player__time:hover #timeline__current-time {
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+.spot:hover { 
+    cursor: pointer;
 }
 
 #volume-bar:hover::after {
@@ -37,7 +30,24 @@
     height: 4px;
     background-color: #ADFF2F;
     border-radius: 10px;
-}
+    cursor: pointer;
+} 
+
+
+
+/* #player__bar:hover::after {
+    content: ""; 
+    display: inline-block; 
+    position: absolute;
+    left: 15%;
+    top: -50%;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; 
+} */
+
+
 
 
 /* sidebar hovers */
@@ -47,3 +57,29 @@
 }
 
 .home-item:hover img, #install:hover img { opacity: 1; }
+
+
+/* main hovers */ 
+#upgrade__btn:hover { transform: scale(1.1); }
+#nav-explorer li:hover { color: white; }
+
+/* overlay alle cover album */
+
+.album__thumbnail:hover i  {
+    display: block;
+    z-index: 99;
+}
+
+.album__thumbnail:hover::after {  
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.4;
+    cursor: pointer;
+}

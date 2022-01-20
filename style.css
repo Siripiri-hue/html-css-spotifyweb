@@ -27,11 +27,6 @@ body {
 
 .white { color: white; }
 .bold { font-weight: 700; }
-.bar { 
-    height: 4px;
-    background-color: #5A5A5A;
-    border-radius: 10px;
-}
 
 
 /* HEADER - TOOLBAR */
@@ -76,39 +71,50 @@ body {
     justify-content: space-between;
     align-items: center;
     column-gap: 15px;
+    /* line-height: 40px; */
 }
 
 #play-icon { 
-    height: 40px;
+    /* height: 40px; */
     width: 40px;
     text-align: center;
     vertical-align: middle;
-    transition: font-size;
-}
-
-#play-icon i {
+    transition: transform;
     font-size: 30px;
 }
 
 #player__time {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
-#player__bar { 
-    width: 23vw;
+.slider {
+    background-color: #5A5A5A;
+    /* flex-basis: 150px; */
+    height: 4px;
+    border-radius: 10px;
+}
+#timeline__slider { 
+    width: 15vw;
     position: relative;
 }
-
-#player__bar::after {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 4px;
+#timeline__current-time { 
     background-color: white;
-    border-radius: 10px;
+    width: 20%;
+    overflow: hidden; 
+}
+.spot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 20%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
     /* comandi suono */
@@ -240,12 +246,13 @@ main {
 
 #upgrade__btn {
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: transparent;
     text-transform: uppercase;
     padding: 15px 40px;
     border-radius: 50px;
     font-weight: 700;
+    transition: transform;
 }
 
     /* nav esplora */
@@ -277,11 +284,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    position: relative;
 }
 .album { max-width: 175px; }
 .album__thumbnail {
     width: 175px;
     height: 175px;
+    position: relative;
 }
 
 .album__details {
@@ -291,6 +300,16 @@ main {
 .album__author { 
     font-size: 10px;
     line-height: 20px;
+}
+
+.album__thumbnail i {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
 }
 
 #recently .music-container__subtitle { display: none; }
