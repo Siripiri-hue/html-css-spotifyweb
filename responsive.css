@@ -20,26 +20,27 @@ Large	lg	≥992px
     .albums__wrapper { 
         gap: 4%;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .album { width: calc(96% / 2); }
 }
 
 /* Small	sm	≥576px <768px &  */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) {
     .albums__wrapper { 
-        gap: 4%;
+        gap: 3%;
         flex-wrap: wrap;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
-    .album { width: calc(96% / 2); }
+    .album { width: calc(90% / 2); }
 }
 
-/* Medium	md	≥768px & < 992px */
-@media screen and (max-width: 992px) {
+/* Medium	md	≥768px */
+@media screen and (min-width: 768px) {
     .albums__wrapper { 
-        gap: 4%;
+        gap: 2%;
         flex-wrap: wrap;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
-    .album { width: calc(96% / 4); }
+    .album { width: calc(94% / 4); }
 }
