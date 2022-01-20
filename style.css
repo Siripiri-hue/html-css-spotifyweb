@@ -24,7 +24,6 @@ body {
     height: 100vh;
     color: #646464;
 }
-
 .white { color: white; }
 .bold { font-weight: 700; }
 
@@ -83,6 +82,7 @@ body {
     transition: transform;
     font-size: 30px;
 }
+
     /* slider */
 #player__time {
     display: flex;
@@ -99,15 +99,18 @@ body {
     height: 4px;
     border-radius: 10px;
 }
+
 #timeline__slider { 
     width: 15vw;
     position: relative;
 }
+
 #timeline__current-time { 
     background-color: white;
     width: 20%;
     overflow: hidden; 
 }
+
 .spot {
     height: 10px;
     width: 10px;
@@ -138,6 +141,7 @@ body {
     width: 20%;
     overflow: hidden; 
 }
+
 /* #volume-bar::after {
     content: "";
     display: block;
@@ -166,7 +170,11 @@ main {
 }
 
     /* loghi */
-#logo-sm { display: none; }
+#logo-sm { 
+    display: none;
+    /* width: 75%; */
+}
+
 #logo-lg { 
     width: 75%;
     height: auto;
@@ -179,15 +187,13 @@ main {
     opacity: 0.7;
 }
 
-#home-list { 
-    padding: 30px 0;
-}
+#home-list { padding: 30px 0; }
 .home-item__text { line-height: 25px; }
-
 .home-item.active { 
     color: white;
     position: relative;
 }
+
 .home-item.active img { opacity: 1; }
 .home-item.active::after {
     content: "";
@@ -222,7 +228,7 @@ main {
 
 .playlist__name { line-height: 25px; }
 
-    /* tasto installa */
+    /* tastino installa */
 #install {
     border-bottom: 1px solid #5A5A5A;
     width: 90%;
@@ -235,7 +241,7 @@ main {
     opacity: 0.7; 
 }
 
-    /* user profile */
+    /* blocchetto user */
 #user {
     line-height: 40px;
 }
@@ -290,7 +296,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
 #nav-explorer li {
@@ -314,24 +320,26 @@ main {
     transform: translateX(-50%);
 }
 
-
     /* sezioni musicali */
-
 .music-container { padding: 15px; }
 .section-title { padding-bottom: 12px; }
 .music-container__title {
     font-size: 20px;
     line-height: 30px;
 }
-.music-container__subtitle { line-height: 30px; }
 
+.music-container__subtitle { line-height: 30px; }
 .albums__wrapper { 
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    /* flex-wrap: wrap; */
+    gap: 2%;
     position: relative;
 }
-.album { max-width: 175px; }
+
+.album { 
+    max-width: 175px;
+    width: calc(90% / 6); 
+}
 .album__thumbnail {
     width: 175px;
     height: 175px;
@@ -342,6 +350,7 @@ main {
     padding: 10px;
     text-align: center;
 }
+
 .album__author { 
     font-size: 10px;
     line-height: 20px;
@@ -364,17 +373,6 @@ main {
     border-radius: 50%;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

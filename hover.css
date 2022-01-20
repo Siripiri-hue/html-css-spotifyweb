@@ -19,9 +19,11 @@
     background-color: #ADFF2F;
     cursor: pointer;
 }
+
 #player__time:hover .spot, #volume-bar:hover .spot {
     display: block;
 }
+
 #player__time:hover #timeline__slider, #volume-bar:hover {
     cursor: pointer;
 }
@@ -35,12 +37,6 @@
     border-radius: 10px;
     cursor: pointer;
 }  */
-
-
-
-
-
-
 
 
 /* sidebar hovers */
@@ -57,10 +53,6 @@
 
 
 /* overlay alle cover album */
-.album__thumbnail:hover i  {
-    display: block;
-    z-index: 99;
-}
 .album__thumbnail:hover::after {  
     content: "";
     display: block;
@@ -73,4 +65,9 @@
     background-color: black;
     opacity: 0.4;
     cursor: pointer;
+}
+
+.album__thumbnail:hover i  {
+    display: block;
+    z-index: 1;
 }

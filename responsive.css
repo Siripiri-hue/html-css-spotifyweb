@@ -1,0 +1,45 @@
+/* 
+breakpoints
+X-Small	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+*/
+
+/* X-Small	<576px */
+@media screen and (max-width: 576px) {
+    /* sidebar */
+    #sidebar { flex-basis: 40px; }
+    #home-list { flex-grow: 1; }
+    #logo-sm { display: block; }
+    #logo-lg, .home-item__text, #playlist, #user > span, #install > span { 
+        display: none; 
+    }
+
+    /* albums */
+    .albums__wrapper { 
+        gap: 4%;
+        flex-wrap: wrap;
+    }
+    .album { width: calc(96% / 2); }
+}
+
+/* Small	sm	≥576px <768px &  */
+@media screen and (max-width: 768px) {
+    .albums__wrapper { 
+        gap: 4%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .album { width: calc(96% / 2); }
+}
+
+/* Medium	md	≥768px & < 992px */
+@media screen and (max-width: 992px) {
+    .albums__wrapper { 
+        gap: 4%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .album { width: calc(96% / 4); }
+}

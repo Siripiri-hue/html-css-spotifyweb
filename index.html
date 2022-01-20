@@ -16,10 +16,11 @@
 
     <!-- toolbar  -->
     <header id="toolbar">
+
         <!-- canzone a sx -->
         <div id="song">
             <!-- <figure> -->
-                <img src="img/PinkFloydAnotherBrickCover.jpg">
+            <img src="img/PinkFloydAnotherBrickCover.jpg">
             <!-- </figure> -->
             <div id="song__details" class="bold">
                 <span id="song__author">Pink Floyd</span>
@@ -33,6 +34,7 @@
 
         <!-- player centrale -->
         <div id="player" class="white">
+            <!-- icone comando  -->
             <ul id="player__commands">
                 <li><i class="fas fa-random"></i></li>
                 <li><i class="fas fa-step-backward"></i></li>
@@ -41,6 +43,7 @@
                 <li><i class="fas fa-redo-alt"></i></li>
             </ul>
 
+            <!-- slider temporale -->
             <div id="player__time" class="bold">
                 <span>0:25</span>
                 <div class="slider" id="timeline__slider">
@@ -60,7 +63,6 @@
                 <div class="slider" id="volume__current-volume"></div> <!-- linea bianca  -->
                 <div class="spot" id="volume__control"></div> <!-- pallino -->
             </div>
-
         </div>
     </header>
 
@@ -103,20 +105,23 @@
                 </ul>
             </div>
 
-            <!-- roba in fondo -->
+            <!-- tastino installa -->
             <div id="install">
                 <img src="img/download.svg">
-                Installa app
+                <span>Installa app</span>
             </div>
+
+            <!-- blocchetto utente -->
             <div id="user" class="white">
                 <div>
                     <img src="img/profile.svg">
                 </div>
-                John Doe
+                <span>John Doe</span>
             </div>
         </aside>
 
         <section id="main-content">
+
             <!-- banner upgrade -->
             <section id="upgrade-banner">
                 <button id="upgrade__btn">
@@ -138,11 +143,13 @@
 
             <!-- blocco album recenti  -->
             <section id="recently" class="music-container">
+                <!-- titolo -->
                 <div class="section-title">
                     <h4 class="music-container__title white bold">Recently Played</h4>
                     <h3 class="music-container__subtitle bold"></h3>
                 </div>
-                
+
+                <!-- album container -->
                 <div class="albums__wrapper">
                     <div class="album">
                         <figure class="album__thumbnail">
@@ -161,7 +168,8 @@
                             <i class="far fa-play-circle"></i>
                         </figure>
                         <div class="album__details">
-                            <div class="album__title white bold">Stranger Things Vol. 1 (a Netflix Original Serie's Soundtrack)</div>
+                            <div class="album__title white bold">Stranger Things Vol. 1 (a Netflix Original Serie's
+                                Soundtrack)</div>
                             <div class="album__author bold">Kyle Dixon & Michael Stein</div>
                         </div>
                     </div>
@@ -176,7 +184,7 @@
                             <div class="album__author bold">Whitney Houston</div>
                         </div>
                     </div>
-                    
+
                     <div class="album">
                         <figure class="album__thumbnail">
                             <img src="img/split.jpeg">
@@ -187,7 +195,7 @@
                             <div class="album__author bold">Niki</div>
                         </div>
                     </div>
-                    
+
                     <div class="album">
                         <figure class="album__thumbnail">
                             <img src="img/cure.jpeg">
@@ -209,17 +217,19 @@
                             <div class="album__author bold">Pink Floyd</div>
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
 
             <!-- blocco album creati per  -->
             <section id="created-for" class="music-container">
+                <!-- titolo -->
                 <div class="section-title">
                     <h4 class="music-container__title white bold">Creato per John Doe</h4>
                     <h3 class="music-container__subtitle bold">Più ascolti, più saranno accurati i suggerimenti.</h3>
                 </div>
 
+                <!-- album container -->
                 <div class="albums__wrapper">
                     <div class="album">
                         <figure class="album__thumbnail">
@@ -248,11 +258,13 @@
 
             <!-- blocco artisti popolari  -->
             <section id="#popular-artists" class="music-container">
+                <!-- titolo -->
                 <div class="section-title">
                     <h4 class="music-container__title white bold">Artisti più popolari</h4>
                     <h3 class="music-container__subtitle bold">Più ascolti, più saranno accurati i suggerimenti.</h3>
                 </div>
 
+                <!-- album container -->
                 <div class="albums__wrapper">
                     <div class="album">
                         <figure class="album__thumbnail circled">
@@ -279,6 +291,7 @@
                 </div>
             </section>
         </section>
+
     </main>
 </body>
 </html>
